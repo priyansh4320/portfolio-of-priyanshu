@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="container mx-auto max-w-3xl px-4 text-center">
         <motion.div {...fadeUp(0)}>
           <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-sm font-medium">
-            Open to opportunities ✦
+            AI Engineer · Multi-agent systems · Python OSS
           </Badge>
         </motion.div>
 
@@ -24,16 +24,17 @@ export default function Hero() {
           className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-[1.1]"
         >
           Building intelligent
-          <span className="block text-primary">products & systems</span>
+          <span className="block text-primary">agents & systems</span>
         </motion.h1>
 
         <motion.p
           {...fadeUp(0.2)}
           className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto"
         >
-          I'm <span className="font-semibold text-foreground">Priyanshu Sharma</span> — a full-stack
-          developer with 5+ years of experience building web apps, APIs,
-          and AI-powered products.
+          I'm <span className="font-semibold text-foreground">Priyanshu Deshmukh</span> — core maintainer
+          at <span className="font-semibold text-foreground">AG2 (AutoGen)</span>, architecting
+          multi-agent orchestration, frontier LLM integrations, and production RAG. I also
+          deliver AI/ML solutions as a freelance architect for global clients.
         </motion.p>
 
         <motion.div
@@ -44,7 +45,7 @@ export default function Hero() {
             <a href="#projects">View My Work</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="px-8">
-            <a href="#contact">Let's Chat</a>
+            <a href="#contact">Email</a>
           </Button>
         </motion.div>
 

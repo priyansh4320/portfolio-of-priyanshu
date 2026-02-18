@@ -38,7 +38,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right side: theme toggle + CTA */}
+          {/* Right side: theme toggle + mobile menu */}
           <div className="flex items-center gap-2">
             <Button
               variant="ghost"
@@ -51,14 +51,6 @@ export default function Navbar() {
               ) : (
                 <Moon className="h-4 w-4" />
               )}
-            </Button>
-
-            <Button
-              asChild
-              size="sm"
-              className="hidden md:inline-flex"
-            >
-              <a href="#contact">Let's Chat</a>
             </Button>
 
             {/* Mobile hamburger */}
@@ -98,15 +90,6 @@ export default function Navbar() {
               </a>
             ))}
           </nav>
-          <div className="mt-auto pb-8">
-            <Button
-              asChild
-              className="w-full"
-              onClick={() => setMobileOpen(false)}
-            >
-              <a href="#contact">Let's Chat</a>
-            </Button>
-          </div>
         </div>
       </Sheet>
     </>

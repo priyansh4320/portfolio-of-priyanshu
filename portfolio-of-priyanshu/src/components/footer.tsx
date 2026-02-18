@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
 const socials = [
-  { label: "GitHub", href: "https://github.com", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
+  { label: "GitHub", href: "https://github.com/ag2ai/ag2", icon: Github },
+  { label: "LinkedIn", href: "https://linkedin.com/in/priyanshusharma", icon: Linkedin },
   { label: "Twitter", href: "https://twitter.com", icon: Twitter },
 ]
 
@@ -17,7 +17,7 @@ export default function Footer() {
           <p className="text-sm font-bold text-primary">Priyanshu.</p>
 
           <p className="text-xs text-muted-foreground order-last md:order-none">
-            © {new Date().getFullYear()} Priyanshu Sharma. Built with React + shadcn/ui.
+            © {new Date().getFullYear()} Priyanshu Deshmukh. Built with React + shadcn/ui.
           </p>
 
           <div className="flex items-center gap-1">

@@ -6,57 +6,84 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "AI Code Review Bot",
+    title: "AG2 (AutoGen) — Multi-Agent Platform",
     description:
-      "An LLM-powered GitHub bot that reviews pull requests, suggests improvements, and catches bugs before they reach production.",
-    tags: ["TypeScript", "OpenAI API", "GitHub Actions", "Node.js"],
-    demo: "#",
-    github: "#",
+      "Core maintainer for the AG2 orchestration platform: GPT-5 series & apply_patch tooling, Bedrock/Gemini/Ollama resilience, DocAgent architecture, Dynamic RAG (Vector + Neo4j), and ParallelAgentRunner. Multiple merged PRs across model clients, tool concurrency, and agent refactors.",
+    tags: ["Python", "GPT-5", "OpenAI", "RAG", "Neo4j", "Multi-agent"],
+    demo: "https://github.com/ag2ai/ag2",
+    github: "https://github.com/ag2ai/ag2",
     featured: true,
   },
   {
-    title: "DevDash",
+    title: "DocAgent & Dynamic RAG",
     description:
-      "A developer productivity dashboard aggregating GitHub activity, CI/CD status, and team metrics into one unified interface.",
-    tags: ["React", "Next.js", "Tailwind", "PostgreSQL"],
-    demo: "#",
-    github: "#",
+      "Concurrent document ingestion, thread-pool tool execution, supervisor pattern, and citation support. Extended with Graph RAG (Neo4j) and configurable vector+graph aggregator for multi-hop, relationship-aware retrieval.",
+    tags: ["Python", "RAG", "Neo4j", "Concurrent I/O"],
+    demo: "https://github.com/ag2ai/ag2/pull/2097",
+    github: "https://github.com/ag2ai/ag2/pull/2105",
     featured: false,
   },
   {
-    title: "Vectorize",
+    title: "GPT-5.1 apply_patch & Code-Editing Agents",
     description:
-      "A semantic search engine for documentation. Upload any docs and query them in natural language using embeddings.",
-    tags: ["Python", "FastAPI", "Pinecone", "React"],
-    demo: "#",
-    github: "#",
+      "Support for GPT-5.1 apply_patch tool (V4A diff/patch format) enabling agents to emit structured, actionable multi-file diffs. Tutorial and notebook for safe autonomous refactoring and CI-friendly edits.",
+    tags: ["OpenAI API", "Structured output", "Tool calling"],
+    demo: "https://github.com/ag2ai/ag2/pull/2213",
+    github: "https://github.com/ag2ai/ag2/pull/2213",
     featured: false,
   },
   {
-    title: "Streamline API",
+    title: "ModelClient v2 (OpenAI, Gemini, Bedrock)",
     description:
-      "A high-performance REST & GraphQL API boilerplate with auth, rate limiting, caching and full observability out of the box.",
-    tags: ["Node.js", "GraphQL", "Redis", "Docker"],
-    demo: "#",
-    github: "#",
+      "v2 ModelClient protocol for OpenAI, Gemini, and Bedrock with rich multimodalities (text, image). Backward compatibility, documentation, and example notebooks. Bedrock retry/backoff and structured-output handling.",
+    tags: ["Python", "OpenAI", "Gemini", "AWS Bedrock"],
+    demo: "https://github.com/ag2ai/ag2/pull/2357",
+    github: "https://github.com/ag2ai/ag2/pull/2357",
     featured: false,
   },
   {
-    title: "FormFlow",
+    title: "ParallelAgentRunner & Agent Refactors",
     description:
-      "Drag-and-drop form builder with conditional logic, multi-step flows, and analytics — zero backend setup required.",
-    tags: ["React", "TypeScript", "Zustand", "Supabase"],
-    demo: "#",
-    github: "#",
+      "ParallelAgentRunner for safe parallel agent execution (thread/process coordination, cancellation, result aggregation). ConversableAgent refactor for consistent message APIs and list[messages] enforcement across agents.",
+    tags: ["Python", "Concurrency", "Multi-agent", "API design"],
+    demo: "https://github.com/ag2ai/ag2/pull/2143",
+    github: "https://github.com/ag2ai/ag2/pull/2086",
     featured: false,
   },
   {
-    title: "Pulse Monitor",
+    title: "AWS Bedrock resilience & structured outputs",
     description:
-      "Real-time uptime monitoring with alerting via Slack/email, incident timelines, and a public status page generator.",
-    tags: ["Next.js", "Prisma", "WebSockets", "Vercel"],
-    demo: "#",
-    github: "#",
+      "Exponential backoff and retry at the Bedrock provider layer; structured-output handling so transient failures don't cascade and downstream parsers consistently receive JSON. Production readiness for enterprise clouds.",
+    tags: ["Python", "AWS Bedrock", "Resilience"],
+    demo: "https://github.com/ag2ai/ag2/pull/2292",
+    github: "https://github.com/ag2ai/ag2/pull/2292",
+    featured: false,
+  },
+  {
+    title: "Gemini ThinkingConfig & Ollama validation",
+    description:
+      "ThinkingConfig support for Gemini (reasoning depth/latency, thought signatures). Fixed LLMConfig validation for Ollama when native_tool_calls enabled — prevents misconfiguration crashes. Cross-provider stability.",
+    tags: ["Python", "Gemini", "Ollama", "Config validation"],
+    demo: "https://github.com/ag2ai/ag2/pull/2254",
+    github: "https://github.com/ag2ai/ag2/pull/1951",
+    featured: false,
+  },
+  {
+    title: "Shell tool & multi-inbuilt tool execution (docs)",
+    description:
+      "Documentation and blog post on shell tool and multi-inbuilt tool execution in AG2 — how agents use shell and built-in tools safely, concurrency behavior, and deterministic outputs for planners.",
+    tags: ["Documentation", "Shell tool", "Tool execution", "AG2"],
+    demo: "https://github.com/ag2ai/ag2/pull/2288",
+    github: "https://github.com/ag2ai/ag2/pull/2288",
+    featured: false,
+  },
+  {
+    title: "GPT-5 support & feature roadmap for AG2",
+    description:
+      "Co-authored proposal and roadmap for GPT-5 support in AG2: new models (gpt-5, gpt-5-mini, gpt-5-nano), reasoning effort, verbosity, custom tools, chain-of-thought passing, and migration path from older models.",
+    tags: ["GPT-5", "Roadmap", "OpenAI", "Responses API", "AG2"],
+    demo: "https://github.com/ag2ai/ag2/issues/1996",
+    github: "https://github.com/ag2ai/ag2/issues/1996",
     featured: false,
   },
 ]
@@ -73,10 +100,10 @@ export default function Projects() {
           className="mb-12"
         >
           <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
-            Projects
+            Projects & contributions
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Things I've built
+            What I've built
           </h2>
         </motion.div>
 
@@ -114,16 +141,18 @@ export default function Projects() {
                   </div>
 
                   <div className="flex gap-2">
-                    <Button asChild variant="outline" size="sm" className="flex-1 text-xs">
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-3.5 w-3.5 mr-1.5" />
-                        Demo
-                      </a>
-                    </Button>
+                    {project.demo !== "#" && (
+                      <Button asChild variant="outline" size="sm" className="flex-1 text-xs">
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-3.5 w-3.5 mr-1.5" />
+                          View
+                        </a>
+                      </Button>
+                    )}
                     <Button asChild variant="ghost" size="sm" className="flex-1 text-xs">
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="h-3.5 w-3.5 mr-1.5" />
-                        Code
+                        {project.github.includes("issues") ? "Issue" : project.github.includes("pull") ? "PR" : "Repo"}
                       </a>
                     </Button>
                   </div>

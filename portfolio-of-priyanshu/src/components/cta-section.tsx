@@ -27,9 +27,9 @@ export default function CtaSection() {
                 <span className="block text-primary">intelligent together</span>
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-                Whether you're looking for a full-stack engineer, want to collaborate
-                on an open-source project, or just want to talk tech — I'm always up
-                for a good conversation.
+                Whether you're building multi-agent systems, need help with RAG or
+                LLM integration, or want to collaborate on Python OSS (e.g. AG2) —
+                I'm happy to connect.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4">

@@ -4,15 +4,17 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 const skills = [
-  "React", "TypeScript", "Next.js", "Node.js",
-  "Python", "PostgreSQL", "Docker", "AWS",
-  "Tailwind CSS", "GraphQL", "Redis", "Git",
+  "AG2", "OpenAI SDK", "Anthropic SDK", "Gemini Client GCP",
+  "Vertex AI", "Bedrock", "Azure", "Prompt Engineering",
+  "Context Engineering", "Python", "TypeScript", "LangGraph",
+  "GPT-5", "RAG", "Neo4j", "AWS", "Kubernetes",
+  "Multi-agent systems", "Structured outputs", "Tool calling",
+  "FastAPI", "Docker", "CI/CD", "Git",
 ]
 
 const highlights = [
-  { label: "Years Experience", value: "5+" },
-  { label: "Projects Shipped", value: "30+" },
-  { label: "Open Source PRs", value: "50+" },
+  { label: "Years in AI/ML", value: "3+" },
+  { label: "Python OSS PRs", value: "50+" },
 ]
 
 export default function About() {
@@ -30,7 +32,7 @@ export default function About() {
             About
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            A builder at heart
+            Welcome
           </h2>
         </motion.div>
 
@@ -44,26 +46,26 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-muted-foreground leading-relaxed">
-              I'm a full-stack engineer who loves turning complex problems into
-              clean, elegant solutions. I've spent the last five years building
-              products across fintech, developer tooling, and AI — always with a
-              bias toward shipping fast and iterating faster.
+              I help teams build production-ready AI systems — from multi-agent orchestration and
+              frontier LLM integrations to scalable RAG architectures. As a core maintainer at
+              <span className="font-medium text-foreground"> AG2 (AutoGen)</span>, I work on
+              GPT-5 series tooling, safe code-editing agents, and document-scale retrieval systems.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My background spans both the frontend and backend, with a growing
-              focus on AI-integrated systems. I care deeply about developer
-              experience, performance, and writing code that future-me will
-              actually understand.
+              I specialize in prompt and context engineering, provider integrations (OpenAI, Anthropic,
+              Gemini, Bedrock, Azure), and building systems that are correct, observable, and fast.
+              Whether you need help architecting agent workflows, optimizing RAG pipelines, or
+              integrating the latest LLM capabilities, I can help you ship with confidence.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not building, I'm reading about systems design, contributing
-              to open source, or writing about what I've learned.
+              I also contribute to Python OSS, write tutorials, and share what I learn along the way.
+              Let's build something intelligent together.
             </p>
 
             <Separator className="my-6" />
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {highlights.map((item) => (
                 <div key={item.label} className="text-center">
                   <p className="text-2xl font-bold text-primary">{item.value}</p>
