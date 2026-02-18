@@ -1,11 +1,11 @@
-import './App.css'
-import Portfolio from './ai-portfolio-spline'
+import { ThemeProvider } from "@/components/theme-provider"
+import Portfolio from "./portfolio"
 
 function App() {
   return (
-   <>
-   <Portfolio />
-   </>
+    <ThemeProvider>
+      <Portfolio />
+    </ThemeProvider>
   )
 }
 
