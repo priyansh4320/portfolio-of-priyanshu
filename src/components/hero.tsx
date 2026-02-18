@@ -45,7 +45,7 @@ export default function Hero() {
             <a href="#projects">View My Work</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="px-8">
-            <a href="#contact">Email</a>
+            <a href="mailto:priyanshudeshmukh4@gmail.com">Email</a>
           </Button>
         </motion.div>
 
@@ -54,7 +54,7 @@ export default function Hero() {
           className="flex justify-center gap-4 mt-8"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/priyansh4320"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -63,7 +63,7 @@ export default function Hero() {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/priyanshudeshmukh/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"

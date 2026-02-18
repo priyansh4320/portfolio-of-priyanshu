@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/ag2ai/ag2", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com/in/priyanshusharma", icon: Linkedin },
+  { label: "GitHub", href: "https://github.com/priyansh4320", icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/priyanshudeshmukh/", icon: Linkedin },
   { label: "Twitter", href: "https://twitter.com", icon: Twitter },
 ]
 

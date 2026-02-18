@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function CtaSection() {
   const copyEmail = () => {
-    navigator.clipboard.writeText("priyanshu@example.com")
+    navigator.clipboard.writeText("priyanshudeshmukh4@gmail.com")
   }
 
   return (
@@ -34,7 +34,7 @@ export default function CtaSection() {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Button asChild size="lg" className="px-8 gap-2">
-                  <a href="mailto:priyanshu@example.com">
+                  <a href="mailto:priyanshudeshmukh4@gmail.com">
                     <Mail className="h-4 w-4" />
                     Send an Email
                   </a>
